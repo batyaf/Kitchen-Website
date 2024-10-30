@@ -1,0 +1,262 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03070D98-4037-41F0-AA69-2421506D344B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kitchenProject</RootNamespace>
+    <AssemblyName>kitchenProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44345</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="js\main.js" />
+    <Content Include="lib\animate.css" />
+    <Content Include="lib\animate.min.css" />
+    <Content Include="lib\animate\animate.css" />
+    <Content Include="lib\animate\animate.min.css" />
+    <Content Include="lib\counterup.min.js" />
+    <Content Include="lib\counterup\counterup.min.js" />
+    <Content Include="lib\easing.min.js" />
+    <Content Include="lib\easing\easing.js" />
+    <Content Include="lib\easing\easing.min.js" />
+    <Content Include="lib\img\about-1.jpg" />
+    <Content Include="lib\img\about-2.jpg" />
+    <Content Include="lib\img\about-3.jpg" />
+    <Content Include="lib\img\about-4.jpg" />
+    <Content Include="lib\img\carousel-1.jpg" />
+    <Content Include="lib\img\carousel-2.jpg" />
+    <Content Include="lib\img\feature.jpg" />
+    <Content Include="lib\img\goldKitchen.jpg" />
+    <Content Include="lib\img\icon\icon-01-light.png" />
+    <Content Include="lib\img\icon\icon-01-primary.png" />
+    <Content Include="lib\img\icon\icon-02-light.png" />
+    <Content Include="lib\img\icon\icon-02-primary.png" />
+    <Content Include="lib\img\icon\icon-03-light.png" />
+    <Content Include="lib\img\icon\icon-03-primary.png" />
+    <Content Include="lib\img\icon\icon-04-light.png" />
+    <Content Include="lib\img\icon\icon-04-primary.png" />
+    <Content Include="lib\img\icon\icon-05-light.png" />
+    <Content Include="lib\img\icon\icon-05-primary.png" />
+    <Content Include="lib\img\icon\icon-06-light.png" />
+    <Content Include="lib\img\icon\icon-06-primary.png" />
+    <Content Include="lib\img\icon\icon-07-light.png" />
+    <Content Include="lib\img\icon\icon-07-primary.png" />
+    <Content Include="lib\img\icon\icon-08-light.png" />
+    <Content Include="lib\owl.carousel.min.css" />
+    <Content Include="lib\owl.carousel.min.js" />
+    <Content Include="lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="lib\owlcarousel\owl.carousel.js" />
+    <Content Include="lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="lib\parallax.min.js" />
+    <Content Include="lib\parallax\parallax.min.js" />
+    <Content Include="lib\waypoints.min.js" />
+    <Content Include="lib\waypoints\links.php" />
+    <Content Include="lib\waypoints\waypoints.min.js" />
+    <Content Include="lib\wow.min.js" />
+    <Content Include="lib\wow\wow.js" />
+    <Content Include="lib\wow\wow.min.js" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="pages\colorsPage.html" />
+    <Content Include="pages\contactPage.html" />
+    <Content Include="pages\aboutPage.html" />
+    <Content Include="pages\HomePage.html" />
+    <Content Include="pages\kitchenGalleryPage.html" />
+    <Content Include="pictures\about-renew-1024x683.png" />
+    <Content Include="pictures\backKIT.jpg" />
+    <Content Include="pictures\botik.jpg" />
+    <Content Include="pictures\chomarim.png" />
+    <Content Include="pictures\class.jpg" />
+    <Content Include="pictures\color\blackKitchen.jpg" />
+    <Content Include="pictures\color\blueKitchen.jpg" />
+    <Content Include="pictures\color\goldKitchen.jpg" />
+    <Content Include="pictures\color\greenKitchen.jpg" />
+    <Content Include="pictures\color\redKitchen.jpg" />
+    <Content Include="pictures\color\whiteKitchen.jpg" />
+    <Content Include="pictures\contact\icona-facebook.png" />
+    <Content Include="pictures\contact\icona-instagram.png" />
+    <Content Include="pictures\contact\Mail-icon.png" />
+    <Content Include="pictures\contact\Mail.png" />
+    <Content Include="pictures\contact\pin_brown.png" />
+    <Content Include="pictures\contact\Telefono.png" />
+    <Content Include="pictures\contact\Whatsapp.png" />
+    <Content Include="pictures\eiKitch.jpg" />
+    <Content Include="pictures\face.png" />
+    <Content Include="pictures\facebookicon.png" />
+    <Content Include="pictures\faceIcon.jpg" />
+    <Content Include="pictures\familyIcon.png" />
+    <Content Include="pictures\fhone.png" />
+    <Content Include="pictures\goldKitchen.jpg" />
+    <Content Include="pictures\icon-mobile-19.jpg" />
+    <Content Include="pictures\icon.png" />
+    <Content Include="pictures\iconclose.png" />
+    <Content Include="pictures\inst.png" />
+    <Content Include="pictures\instegramicon.png" />
+    <Content Include="pictures\instIcon.jpg" />
+    <Content Include="pictures\k44 %283%29.jpg" />
+    <Content Include="pictures\k44.jpg" />
+    <Content Include="pictures\kafri 3.jpg" />
+    <Content Include="pictures\kitchenpic\blackKitchen.jpg" />
+    <Content Include="pictures\kitchenpic\blueKitchen.jpg" />
+    <Content Include="pictures\kitchenpic\D793D7A0D799D790D79C-D79ED798D791D797D799D79D-1.jpg" />
+    <Content Include="pictures\kitchenpic\D793D7A0D799D790D79C-D79ED798D791D797D799D79D-11.jpg" />
+    <Content Include="pictures\kitchenpic\D793D7A0D799D790D79C-D79ED798D791D797D799D79D-29.jpg" />
+    <Content Include="pictures\kitchenpic\D793D7A0D799D790D79C-D79ED798D791D797D799D79D-38-1.jpg" />
+    <Content Include="pictures\kitchenpic\D793D7A0D799D790D79C-D79ED798D791D797D799D79D-4.jpg" />
+    <Content Include="pictures\kitchenpic\goldKitchen.jpg" />
+    <Content Include="pictures\kitchenpic\greenKitchen.jpg" />
+    <Content Include="pictures\kitchenpic\redKitchen.jpg" />
+    <Content Include="pictures\kitchenpic\whiteKitchen.jpg" />
+    <Content Include="pictures\kitchenpic\דניאל-מטבחים-24.jpg" />
+    <Content Include="pictures\kitchenpic\דניאל-מטבחים-44.jpg" />
+    <Content Include="pictures\kitchenpic\דניאל-מטבחים-47.jpg" />
+    <Content Include="pictures\kitchenpic\דניאל-מטבחים-48.jpg" />
+    <Content Include="pictures\kitchenpic\דניאל-מטבחים-49.jpg" />
+    <Content Include="pictures\kitchenpic\דניאל-מטבחים-במבצע.jpg" />
+    <Content Include="pictures\kitchenpic\מטבח-תכלת-1.jpg" />
+    <Content Include="pictures\kitchenpic\מטבח-תכלת-2.jpg" />
+    <Content Include="pictures\kitchenpic\מטבחי-דניאל-9.jpg" />
+    <Content Include="pictures\kitchenpic\מטבחי-דניאל-מבטחים-מודרניים-מעוצבים.jpg" />
+    <Content Include="pictures\kitchenpic\מטבחי-דניאל-מטבחים-מעוצבים.jpg" />
+    <Content Include="pictures\kitchenpic\מטבחי-דניאל-מטבחים-עם-אי-מעוצב.jpg" />
+    <Content Include="pictures\kitchenpic\מטבחים-כפריים.jpg" />
+    <Content Include="pictures\logo.png" />
+    <Content Include="pictures\meuztav.jpg" />
+    <Content Include="pictures\modern.jpg" />
+    <Content Include="pictures\nir.png" />
+    <Content Include="pictures\opaacity.png" />
+    <Content Include="pictures\printestIcon.jpg" />
+    <Content Include="pictures\quliy.png" />
+    <Content Include="pictures\responsibility.png" />
+    <Content Include="pictures\Screenshot 2022-12-06 163822.png" />
+    <Content Include="pictures\service.png" />
+    <Content Include="pictures\unnamed %281%29.png" />
+    <Content Include="pictures\unnamed %282%29.png" />
+    <Content Include="pictures\unnamed.png" />
+    <Content Include="pictures\whatsup.png" />
+    <Content Include="READ-ME.txt" />
+    <Content Include="css\StyleSheet.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\owlcarousel\LICENSE" />
+    <None Include="packages.config" />
+    <Content Include="pictures\biglogo.png" />
+    <Content Include="pictures\שרטוט-2-scaled.png" />
+    <Content Include="pictures\about-renew-1-1024x576.png" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52280</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
